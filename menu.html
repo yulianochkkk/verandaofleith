@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content = "windth=device-windth,initial-scale =1.0">
+        <link rel ="stylesheet" href ="css/style.css">
+        <script src="js/script.js"></script>
+        <script src="js/read.js"></script>
+        <script src ="js/anim.js"></script>
+        <title>Veranda of Leith</title>
+        <style>
+            body{
+                background-image: url("img/backg-i.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header id="header" class = "header"> 
+                <div class ="header_container">
+                    <div class="page_container_parent">
+                        <div class="page_container">
+                            <div class="header-block"></div>
+                            <div class="header-block_label"></div>
+                            <h2 class="header-block_title">Veranda of Leith Walk</h2>
+                        </div>
+                    </div>
+                    <div class="header_images">
+                        <a href="#header" class="header_logo" id="phoneLink">
+                            <img src="img/phone.jpg" alt="Phone" id="phoneImg"/>
+                        </a>
+                        <a href="#header" class="header_logo">
+                            <img src="img/shoppingCart.jpg" alt="Shopping Cart" />
+                        </a>
+                    </div>
+                    <div class="overlay" id="phoneOverlay">
+                        <div class="overlay-content">
+                            <h2>Contact</h2>
+                            <p>Phone Number: <span id="phoneNumber">123-456-7890</span></p>
+                            <button id="closePhoneBtn">Close</button>
+                        </div>
+                    </div>
+                    <nav class = "header_menu menu">
+                        <ul class ="menu_list">
+                            <li class="menu item">
+                                <a href="index.html" class="menu_link ">Home</a>
+                            </li>
+                            <li class = "menu_item">
+                                <a href ="menu.html" class ="menu_link">Menu</a>
+                            </li>
+                            <li class ="menu_item">
+                                <a href ="table_booking.html" class ="menu_link">Table booking</a>
+                            </li>
+                            <li class = "menu_item">
+                                <a href ="take_away.html" class ="menu_link">Take away</a>
+                            </li>
+                            <li class = "menu_item">
+                                <a href ="gift_certificates.html" class ="menu_link">Gift certificates</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                    
+                    </div>
+                </header>
+    
+                <main class="page">
+                    <section class ="page_menu ">
+                        <div class="page_menu_container">  
+                            
+                            <div class="menu_images">
+                                <img src="img/st1.png" class="left_ig">
+                                <img src="img/st2.png" class="cent_ig">
+                                <img src="img/st3.png" class="right_ig">
+                                <p class="small-text">VERANDA</p>
+                                <h2 class="big-text ">Menu</h2>
+                                 
+                            </div>
+                                 <div class ="content-hero_text _animitems ">
+                                   <p> Welcome to the Veranda of Leith Walk!
+                                    Veranda of Leith Walk is providing with a lot of beautiful and delicious food. As well we can suggest You to try our Bar menu and Vine list.
+                                   </p>
+                                
+                                 </div>
+                        </div>
+                    </section>
+                    <section class="page_dishes bar">
+                        <div class="dishes_bar_container">
+                            
+                            <div class="db_ig">
+                              <a href="#"id="menuDishesReader" onclick="button()" class="dishes_link">
+                                <img src="img/dishes.png"class="dishes" alt="Dishes">
+                                <h3 class="dishes_title _animitems">DISHES</h3>
+                              </a>
+                              <a href="#" id="menuDishesReader" onclick="button()"class="bar_link">
+                                <img src="img/bar.png " class="bar" alt="Bar" >
+                                <h4 class="bar_title  _animitems">BAR</h4>
+                               </a>
+                               <a href="#"id="menuDishesReader" onclick="button()" class="wine_link">
+                                <img src="img/wine.png"class="wine" alt="Wine">
+                                <h5 class="wine_title _animitems">WINE</h5>
+                                
+                               </a>
+                            </div>
+                            <div class="right-block_links">
+                              <h2 class="dishes-block_title">VERANDA</h2>
+                              <a href="#" id="menuDishesReader" onclick="button()" class="readmenu">Dishes(pdf)</a>
+                              <a href="#" id="menuDishesReader"onclick="button()" class="readmenu">Bar(pdf)</a>
+                              <a href="#" id="menuDishesReader"onclick="button()" class="readmenu">Wine(pdf)</a>
+                            </div>
+                        </div>
+                    </section>
+                    <footer class ="footer">
+                        <div section="Footer container">
+                        <h2 class="footer-info">ENJOY YOUR TIME</h2>
+                        <a href="https://maps.app.goo.gl/4qZ6FzXQ4q28o1m17">
+                            <h3 class="find-us">FIND US</h3>
+                        </a>
+                        <a href="https://www.instagram.com/instagram?igsh=NTc4MTIwNjQ2YQ==" class="inst_logo">
+                            <img src="img/inst-logo.png" alt="Inst" />
+                        </a>
+                        <a href="https://www.facebook.com/facebook" class="inst_logo">
+                            <img src="img/facebook-app-logo.svg" alt="FB" />
+                        </a>
+                        <h4 class="symbol">&</h4>
+                        <p class="FB-info">FACEBOOK </p>
+                        <p class="IG-info">INSTAGRAM</p>
+                        <p class="contact-i">+441234123123</p>
+                        <p class="contact-i">Veranda.UK@gmail.com</p>
+                        <p class="contact-i">Mon - Sun: 12:00 -23:00</p>
+                        <label for="name"></label>
+                    <input type="text" id="name" name="name" placeholder="Name:">
+                    <br>
+                    <input type="text" id="email" name="email" placeholder="E-Mail:">
+                    <br>
+                    <input type="text" id="comment" name="Comment" placeholder="Comment">
+                     </div>
+                    </footer>
+                    </body>
+                </html>
+                    

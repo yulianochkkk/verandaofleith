@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content = "windth=device-windth,initial-scale =1.0">
+        <link rel ="stylesheet" href ="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script src="js/script.js"></script>
+        <script src="js/validate.js"></script>
+        <script src="js/cookieChecker.js"></script>
+        <script src="js/anim.js"></script>
+        <title>Veranda of Leith</title>
+        <style>
+            body{
+                background-image: url("img/backg-i.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header id="header" class = "header"> 
+                <div class ="header_container">
+                    <div class="page_container_parent">
+                        <div class="page_container">
+                            <div class="header-block"></div>
+                            <div class="header-block_label"></div>
+                            <h2 class="header-block_title">Veranda of Leith Walk</h2>
+                        </div>
+                    </div>
+                    <div class="header_images">
+                        <a href="#header" class="header_logo"id="phoneLink">
+                            <img src="img/phone.jpg" alt="Phone"id="phoneImg" />
+                        </a>
+                        <a href="#header" class="header_logo">
+                            <img src="img/shoppingCart.jpg" alt="Shopping Cart" />
+                        </a>
+                    </div>
+                    <div class="overlay" id="phoneOverlay">
+                        <div class="overlay-content">
+                            <h2>Contact</h2>
+                            <p>Phone Number: <span id="phoneNumber">123-456-7890</span></p>
+                            <button id="closePhoneBtn">Close</button>
+                        </div>
+                    </div>
+        <div class="menu wrapper">
+        <nav class = "header_menu menu">
+            <ul class ="menu_list">
+                <li class="menu item">
+                    <a href="index.html" class="menu_link ">Home</a>
+                </li>
+                <li class = "menu_item">
+                    <a href ="menu.html" class ="menu_link">Menu</a>
+                </li>
+                <li class ="menu_item">
+                    <a href ="table_booking.html" class ="menu_link active">Table booking</a>
+                </li>
+                <li class = "menu_item">
+                    <a href ="take_away.html" class ="menu_link">Take away</a>
+                </li>
+                <li class = "menu_item">
+                    <a href ="gift_certificates.html" class ="menu_link">Gift certificates</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main class="page">
+        <section class ="page_menu ">
+            <div class="page_menu_container">  
+                
+                <div class="menu_images">
+                    <img src="img/tb_1.png" class="left_ig">
+                    <img src="img/tb_2.png" class="cent_ig">
+                    <img src="img/tb_3.png" class="right_ig">
+                    <h2 class="big-text big ">TABLE BOOKING</h2>
+                     
+                </div>
+                     <div class ="content-hero_text _animitems">
+                       <p> Welcome to the Veranda of Leith Walk!
+                        Veranda of Leith Walk is providing with a lot of beautiful and delicious food. As well we can suggest You to try our Bar menu and Vine list.
+                       </p>
+                    
+                     </div>
+            </div>
+        </section>
+                <form id="form"class="form">
+                    <div class="top-block_f">
+                      <input type="text" class="input-fields_book" id="username" placeholder="Name:">
+                      <span id="username_error"style="color: red; font-size: 13px;"></span><br>
+                      <input type="text" class="input-fields_book"id="surname" placeholder="Surname:">
+                      <span id="surname_error"style="color: red; font-size: 13px;"></span><br>
+                      <input type="text" class="input-fields_book"id="email" placeholder="E-Mail:">
+                      <span id="email_error"style="color: red; font-size: 13px;"></span><br>
+                      <input type="text" class="input-fields_book"id="phone_number" placeholder="Phone number:">
+                      <span id="phone_error"style="color: red; font-size: 13px;"></span><br>
+                    </div>
+                    <div class="middle-block-f">
+                     
+                      <input type="datetime-local" class="input-fields_book_mid"id="calendar"  placeholder="Date:" >
+                      <span id="calendar_error"style="color: red; font-size: 13px;"></span><br>
+                      <script>
+                        config={
+                            enableTime: true,
+                            dateFormat: "Y-m-d H:i",
+                            altInput:true,
+                            time_24hr: true
+                          }
+                        flatpickr("input[type=datetime-local]", config);
+                      </script>
+                     
+                     
+                      <select class="input-fields_book_mid"id="guests">
+                      
+                        <option>Number of Guests:</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <span id="guest_error"style="color: red; font-size: 13px;"></span><br>
+                    </div>
+                    <button class = "content-hero_button" type="submit"id="content-button">Book a table </button> 
+                      
+            </div>
+           </form>
+       
+    </div>
+        <footer class ="footer">
+            <div section="Footer container">
+            <h2 class="footer-info">ENJOY YOUR TIME</h2>
+            <a href="https://maps.app.goo.gl/4qZ6FzXQ4q28o1m17">
+            <h3 class="find-us">FIND US</h3>
+            </a>
+            <a href="https://www.instagram.com/instagram?igsh=NTc4MTIwNjQ2YQ==" class="inst_logo">
+                <img src="img/inst-logo.png" alt="Inst" />
+            </a>
+            <a href="https://www.facebook.com/facebook" class="inst_logo">
+                <img src="img/facebook-app-logo.svg" alt="FB" />
+            </a>
+            <h4 class="symbol">&</h4>
+            <p class="FB-info">FACEBOOK </p>
+            <p class="IG-info">INSTAGRAM</p>
+            <p class="contact-i">+441234123123</p>
+            <p class="contact-i">Veranda.UK@gmail.com</p>
+            <p class="contact-i">Mon - Sun: 12:00 -23:00</p>
+            <label for="name"></label>
+        <input type="text" id="name" name="name" placeholder="Name:">
+        <br>
+        <input type="text" id="email" name="email" placeholder="E-Mail:">
+        <br>
+        <input type="text" id="comment" name="Comment" placeholder="Comment">
+         
+        </footer>
+       
+        </body>
+    </html>
+        
+        

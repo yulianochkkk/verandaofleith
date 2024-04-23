@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content = "windth=device-windth,initial-scale =1.0">
+        <link rel ="stylesheet" href ="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+         <!--flatpickr-->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script src="js/script.js"></script>
+        <script src="js/anim.js"></script>
+        <script src ="js/validateTA.js"></script>
+        <title>Veranda of Leith</title>
+        <style>
+            body{
+                background-image: url("img/backg-i.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header id="header" class = "header"> 
+                <div class ="header_container">
+                    <div class="page_container_parent">
+                        <div class="page_container">
+                            <div class="header-block"></div>
+                            <div class="header-block_label"></div>
+                            <h2 class="header-block_title">Veranda of Leith Walk</h2>
+                        </div>
+                    </div>
+                    <div class="header_images">
+                        <a href="#header" class="header_logo" id="phoneLink">
+                            <img src="img/phone.jpg" alt="Phone" id="phoneImg"/>
+                        </a>
+                        <a href="#header" class="header_logo">
+                            <img src="img/shoppingCart.jpg" alt="Shopping Cart" />
+                        </a>
+                    </div>
+                    <div class="overlay" id="phoneOverlay">
+                        <div class="overlay-content">
+                            <h2>Contact</h2>
+                            <p>Phone Number: <span id="phoneNumber">123-456-7890</span></p>
+                            <button id="closePhoneBtn">Close</button>
+                        </div>
+                    </div>
+                    <nav class = "header_menu menu">
+                        <ul class ="menu_list">
+                            <li class="menu item">
+                                <a href="index.html" class="menu_link ">Home</a>
+                            </li>
+                            <li class = "menu_item">
+                                <a href ="menu.html" class ="menu_link">Menu</a>
+                            </li>
+                            <li class ="menu_item">
+                                <a href ="table_booking.html" class ="menu_link">Table booking</a>
+                            </li>
+                            <li class = "menu_item">
+                                <a href ="take_away.html" class ="menu_link">Take away</a>
+                            </li>
+                            <li class = "menu_item">
+                                <a href ="gift_certificates.html" class ="menu_link">Gift certificates</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                    
+                    </div>
+                </header>
+    <main class="page">
+        <section class ="page_menu ">
+            <div class="page_menu_container">  
+                
+                <div class="menu_images">
+                    <img src="img/tb_1.png" class="left_ig">
+                    <img src="img/tb_2.png" class="cent_ig">
+                    <img src="img/tb_3.png" class="right_ig">
+                    <h2 class="big-text big ">TAKE AWAY</h2>
+                     
+                </div>
+                     <div class ="content-hero_text _animitems ">
+                       <p> Welcome to the Veranda of Leith Walk!
+                        Veranda of Leith Walk is providing with a lot of beautiful and delicious food. As well we can suggest You to try our Bar menu and Vine list.
+                       </p>
+                    
+                     </div>
+            </div>
+        </section>
+        <form id="form3"class="form">           
+        <div class="top-block_f">
+            <input type="text" class="input-fields_book" id="username_ta"placeholder="Name:">
+            <span id="username_errorTA"style="color: red; font-size: 13px;"></span><br>
+            <input type="text" class="input-fields_book" id="surname_ta"placeholder="Surname:">
+            <span id="surname_errorTA"style="color: red; font-size: 13px;"></span><br>
+            <input type="text" class="input-fields_book"id="address" placeholder="Address:">
+            <span id="address_error"style="color: red; font-size: 13px;"></span><br>
+            
+          </div>
+          <div class="middle-block-f">
+            <input type="text" class="input-fields_book"id="ph_ta" placeholder="Phone number:">
+            <span id="ph_TA"style="color: red; font-size: 13px;"></span><br>
+            <input type="text" class="input-fields_book" id="email_ta"placeholder="Email:">
+            <span id="email_errorTA"style="color: red; font-size: 13px;"></span><br>
+            <input type="datetime-local" class="input-fields_book_mid"id="date2"  placeholder="Date:">
+            <span id="date2_error"style="color: red; font-size: 13px;"></span><br>
+            <script>
+                config={
+                    enableTime: true,
+                    dateFormat: "Y-m-d H:i",
+                    altInput:true,
+                    time_24hr: true
+                  }
+                flatpickr("input[type=datetime-local]", config);
+            </script>
+          </div>
+          <button class = "content-hero_button" type="submit"id="content-button">Order Now </button> 
+         
+        <h2 class ="header-block_title">Starters</h2>
+        <section class="starter page">
+            <div class="take_away_container">
+                            
+                <div class="takeaway_ig">
+                
+                    <img src="img/ceasar.png"class="ceasar" alt="Dishes">
+                    <h3 class="ceasar_title _animitems">Ceasar</h3>
+                    <select class="opt_choose">
+                        <option>Quantity</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    
+                    <img src="img/greek.png " class="greek" alt="Bar" >
+                    <h4 class="greek_title _animitems">Greek</h4>
+                    <select class="second_opt">
+                        <option>Quantity</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    
+                    <img src="img/tuna.png"class="tuna" alt="Wine">
+                    <h5 class="tuna_title _animitems">Tuna</h5>
+                    <select class="third_opt">
+                        <option>Quantity</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    
+                    <img src="img/caprese.png" class="caprese" alt="Caprese">
+                    <h6 class="st_title _animitems">Caprese</h6>
+                    <select class="f_opt">
+                        <option>Quantity</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    
+                   
+                </div>
+              
+                
+            </div>
+            
+        </section>
+        <h2 class ="header-block_title">Mains</h2>
+        <section class="starter page">
+            <section class="take_away_container">         
+                <div class="takeaway_ig ">
+                
+                    <img src="img/steak.png"class="ceasar" alt="Dishes">
+                    <h3 class="ceasar_title _animitems ">Steak</h3>
+                    <select class="opt_choose">
+                        <option>Quantity</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <select class="roast1">
+                        <option>Roasting</option>
+                        <option>Rare</option>
+                        <option>Medium Rare</option>
+                        <option>Medium</option>
+                        <option>Medium Well</option>
+                        <option>Well Done</option>
+                    </select>
+                  
+                    <img src="img/burger.png " class="greek" alt="Bar" >
+                    <h4 class="greek_title _animitems ">Burger</h4>
+                    <select class="second_opt">
+                        <option>Quantity</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <select class="roast2">
+                        <option>Roasting</option>
+                        <option>Rare</option>
+                        <option>Medium Rare</option>
+                        <option>Medium</option>
+                        <option>Medium Well</option>
+                        <option>Well Done</option>
+                    </select>
+                   
+                   
+                    <img src="img/chix.png"class="tuna" alt="Wine">
+                    <h5 class="tuna_title _animitems ">Chicken</h5>
+                    <select class="third_opt">
+                        <option>Quantity</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <select class="roast3">
+                        <option>Roasting</option>
+                        <option>Rare</option>
+                        <option>Medium Rare</option>
+                        <option>Medium</option>
+                        <option>Medium Well</option>
+                        <option>Well Done</option>
+                    </select>
+                    
+                    <img src="img/lamb.png" class="caprese" alt="Caprese">
+                    <h6 class="st_title _animitems">Lamb</h6>
+                    <select class="f_opt">
+                        <option>Quantity</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <select class="roast4">
+                        <option>Roasting</option>
+                        <option>Rare</option>
+                        <option>Medium Rare</option>
+                        <option>Medium</option>
+                        <option>Medium Well</option>
+                        <option>Well Done</option>
+                    </select>
+                   
+                </div>
+                
+        </section>
+        <h2 class ="header-block_title ">Desserts</h2>
+        <section class="starter page">
+            <div class="take_away_container">
+                           
+                <div class="takeaway_ig">
+                
+                    <img src="img/tiramisu.png"class="ceasar" alt="Dishes">
+                    <h3 class="ceasar_title _animitems">Tiramisu</h3>
+                    <select class="opt_choose">
+                        <option>Quantity</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <select class="roast1">
+                        <option>Topping</option>
+                        <option>Raspberry</option>
+                        <option>Blackberry</option>
+                        <option>Cherry</option>
+                        <option>Strawberry</option>
+                    </select>
+                  
+                    <img src="img/pc.png " class="greek" alt="Bar" >
+                    <h4 class="greek_title _animitems">Panna Cotta</h4>
+                    <select class="second_opt">
+                        <option>Quantity</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <select class="roast2">
+                        <option>Topping</option>
+                        <option>Raspberry</option>
+                        <option>Blackberry</option>
+                        <option>Cherry</option>
+                        <option>Strawberry</option>
+                    </select>
+                   
+                    <img src="img/cheesecake.png"class="tuna" alt="Wine">
+                    <h5 class="tuna_title _animitems">Cheesecake</h5>
+                    <select class="third_opt">
+                        <option>Quantity</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <select class="roast3">
+                        <option>Topping</option>
+                        <option>Raspberry</option>
+                        <option>Blackberry</option>
+                        <option>Cherry</option>
+                        <option>Strawberry</option>
+                    </select>
+                    
+                    <img src="img/icecream.png" class="caprese" alt="Caprese">
+                    <h6 class="st_title _animitems">Ice Cream</h6>
+                    <select class="f_opt">
+                        <option>Quantity</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <select class="roast4">
+                        <option>Topping</option>
+                        <option>Raspberry</option>
+                        <option>Blackberry</option>
+                        <option>Cherry</option>
+                        <option>Strawberry</option>
+                    </select>
+                   
+                </div>
+             
+        
+
+                    
+          
+            </div>
+        </section>
+
+        <footer class ="footer">
+            <div section="Footer container">
+            <h2 class="footer-info">ENJOY YOUR TIME</h2>
+            <a href="https://maps.app.goo.gl/4qZ6FzXQ4q28o1m17">
+                <h3 class="find-us">FIND US</h3>
+            </a>
+            <a href="https://www.instagram.com/instagram?igsh=NTc4MTIwNjQ2YQ==" class="inst_logo">
+                <img src="img/inst-logo.png" alt="Inst" />
+            </a>
+            <a href="https://www.facebook.com/facebook" class="inst_logo">
+                <img src="img/facebook-app-logo.svg" alt="FB" />
+            </a>
+            <h4 class="symbol">&</h4>
+            <p class="FB-info">FACEBOOK </p>
+            <p class="IG-info">INSTAGRAM</p>
+            <p class="contact-i">+441234123123</p>
+            <p class="contact-i">Veranda.UK@gmail.com</p>
+            <p class="contact-i">Mon - Sun: 12:00 -23:00</p>
+            <label for="name"></label>
+        <input type="text" id="name" name="name" placeholder="Name:">
+        <br>
+        <input type="text" id="email" name="email" placeholder="E-Mail:">
+        <br>
+        <input type="text" id="comment" name="Comment" placeholder="Comment">
+         </div>
+        </footer>
+        </body>
+    </html>
